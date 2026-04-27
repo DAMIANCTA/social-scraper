@@ -1,0 +1,39 @@
+:root {
+  color: #14212b;
+  background:
+    radial-gradient(circle at top left, rgba(198, 228, 255, 0.78), transparent 32%),
+    radial-gradient(circle at right, rgba(225, 236, 223, 0.66), transparent 28%),
+    linear-gradient(180deg, #f4f8fb 0%, #ebf1f5 100%);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+a {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}

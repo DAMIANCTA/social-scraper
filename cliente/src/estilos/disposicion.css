@@ -1,0 +1,72 @@
+.pagina-inicio {
+  width: min(1320px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.franja-heroica {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.hero-texto,
+.hero-panel,
+.panel-seccion {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(20, 33, 43, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(20, 33, 43, 0.1);
+}
+
+.hero-texto {
+  padding: 2.4rem;
+}
+
+.hero-panel {
+  padding: 1.5rem;
+}
+
+.zona-contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.8fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.columna-principal,
+.columna-lateral {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.panel-seccion {
+  padding: 1.4rem;
+}
+
+.encabezado-seccion {
+  margin-bottom: 1.1rem;
+}
+
+@media (max-width: 1080px) {
+  .franja-heroica,
+  .zona-contenido {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .pagina-inicio {
+    width: min(100% - 1rem, 1320px);
+    padding-top: 1rem;
+  }
+
+  .hero-texto,
+  .hero-panel,
+  .panel-seccion {
+    border-radius: 22px;
+    padding: 1.15rem;
+  }
+}

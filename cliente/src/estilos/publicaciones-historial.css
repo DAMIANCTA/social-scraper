@@ -1,0 +1,143 @@
+.cuadricula-publicaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-publicacion {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+  border-radius: 22px;
+  border: 1px solid #e0e8ee;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+}
+
+.cabecera-tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.insignia-posicion,
+.insignia-tipo {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.insignia-posicion {
+  background: #174a67;
+  color: #fff;
+}
+
+.insignia-tipo {
+  background: #edf3f6;
+  color: #30576c;
+}
+
+.contenedor-miniatura {
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #dbe5eb;
+}
+
+.miniatura-publicacion {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.miniatura-vacia {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #5b6d7b;
+  background:
+    linear-gradient(135deg, rgba(20, 33, 43, 0.04), rgba(20, 33, 43, 0.09));
+}
+
+.contenido-tarjeta {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.codigo-corto {
+  margin: 0;
+  color: #174a67;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.resumen-publicacion {
+  margin: 0;
+  min-height: 4.5rem;
+}
+
+.dato-secundario {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.enlace-publicacion {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 14px;
+  padding: 0.78rem 1rem;
+  background: #eef5f8;
+  color: #174a67;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.lista-historial {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.item-historial {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  border: 1px solid #e0e8ee;
+  border-radius: 18px;
+  background: #f8fbfd;
+  padding: 0.95rem 1rem;
+  text-align: left;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+}
+
+.item-historial strong,
+.item-historial p {
+  margin: 0;
+}
+
+.meta-historial {
+  display: grid;
+  gap: 0.3rem;
+  justify-items: end;
+  font-size: 0.88rem;
+  color: #607282;
+}
+
+@media (max-width: 720px) {
+  .item-historial {
+    flex-direction: column;
+  }
+
+  .meta-historial {
+    justify-items: start;
+  }
+}
