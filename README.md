@@ -147,4 +147,3 @@ El proyecto queda listo para presentacion academica y para seguir iterando sobre
 =======
 # social-scraper
 Sistema de rastreo de publicaciones recientes de Instagram usando Playwright y sesión persistente.
->>>>>>> 393b84574ba9a55f32f03daa9e17e5a61f1c9bbd
